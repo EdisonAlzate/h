@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import './styles/Home.css';
-import platziconfLogoImage from '../images/platziconf-logo.svg';
-import astronautsImage from '../images/astronauts.svg';
+import "./styles/Home.css";
+import platziconfLogoImage from "../images/webDeveloper.jpg";
+import astronautsImage from "../images/react.png";
 
 export default class Home extends Component {
   render() {
@@ -18,7 +18,7 @@ export default class Home extends Component {
                 className="img-fluid mb-2"
               />
 
-              <h1>Badge Management System</h1>
+              <h1>Digital Representation System</h1>
               <Link className="btn btn-primary" to="/badges">
                 Start
               </Link>

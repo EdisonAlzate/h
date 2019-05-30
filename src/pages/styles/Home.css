@@ -1,7 +1,7 @@
 .Home {
   width: 100%;
   min-height: calc(100vh - 60px);
-  background: url('../../images/stars.svg'), #1B1B25;
+  background: url("../../images/stars.svg"), rgb(66, 22, 16);
   background-repeat: repeat;
 
   color: #ffffff;
@@ -15,6 +15,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.img-fluid {
+  width: 300px;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import './styles/Badge.css';
-import confLogo from '../images/badge-header.svg';
-import Gravatar from './Gravatar';
+import "./styles/Badge.css";
+import confLogo from "../images/webDeveloper.jpg";
+import Gravatar from "./Gravatar";
 
 class Badge extends React.Component {
   render() {
     return (
       <div className="Badge">
         <div className="Badge__header">
-          <img src={confLogo} alt="Logo de la conferencia" />
+          <img
+            className="Badge__header__img"
+            src={confLogo}
+            alt="Logo de la conferencia"
+          />
         </div>
 
         <div className="Badge__section-name">
@@ -24,7 +28,7 @@ class Badge extends React.Component {
           <div>@{this.props.twitter}</div>
         </div>
 
-        <div className="Badge__footer">#platziconf</div>
+        <div className="Badge__footer">#MeetUp-React.js</div>
       </div>
     );
   }

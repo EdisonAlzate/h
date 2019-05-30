@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './styles/BadgeDetails.css';
-import confLogo from '../images/platziconf-logo.svg';
-import Badge from '../components/Badge';
-import DeleteBadgeModal from '../components/DeleteBadgeModal';
+import "./styles/BadgeDetails.css";
+import confLogo from "../images/programador.jpg";
+import Badge from "../components/Badge";
+import DeleteBadgeModal from "../components/DeleteBadgeModal";
 
 function BadgeDetails(props) {
   const badge = props.badge;
@@ -15,7 +15,11 @@ function BadgeDetails(props) {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <img src={confLogo} alt="Logo de la Conferencia" />
+              <img
+                className="img-programador"
+                src={confLogo}
+                alt="Logo de la Conferencia"
+              />
             </div>
             <div className="col-6 BadgeDetails__hero-attendant-name">
               <h1>

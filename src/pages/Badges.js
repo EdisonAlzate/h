@@ -1,19 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './styles/Badges.css';
-import confLogo from '../images/badge-header.svg';
-import BadgesList from '../components/BadgesList';
-import PageLoading from '../components/PageLoading';
-import PageError from '../components/PageError';
-import MiniLoader from '../components/MiniLoader';
-import api from '../api';
+import "./styles/Badges.css";
+import confLogo from "../images/webDeveloper.jpg";
+import BadgesList from "../components/BadgesList";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
+import MiniLoader from "../components/MiniLoader";
+import api from "../api";
 
 class Badges extends React.Component {
   state = {
     loading: true,
     error: null,
-    data: undefined,
+    data: undefined
   };
 
   componentDidMount() {
