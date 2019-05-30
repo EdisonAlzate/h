@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/h/precache-manifest.a7b7c236e8e4d116903194a60016aee0.js"
+  "/EdisonAlzate/h/precache-manifest.157137de2f2fd1eb9a8ebe018366b38b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/h/index.html", {
+workbox.routing.registerNavigationRoute("/EdisonAlzate/h/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
