@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3001';
+//const BASE_URL = 'http://localhost:3001';
+const BASE_URL = "http://digitalrepresentationsystem:3001";
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
@@ -10,8 +11,8 @@ async function callApi(endpoint, options = {}) {
   await simulateNetworkLatency();
 
   options.headers = {
-    'Content-Type': 'application/json',
-    Accept: 'application/json',
+    "Content-Type": "application/json",
+    Accept: "application/json"
   };
 
   const url = BASE_URL + endpoint;
@@ -24,13 +25,13 @@ async function callApi(endpoint, options = {}) {
 const api = {
   badges: {
     list() {
-      return callApi('/badges');
+      return callApi("/badges");
     },
     create(badge) {
       // throw new Error('500: Server error');
       return callApi(`/badges`, {
-        method: 'POST',
-        body: JSON.stringify(badge),
+        method: "POST",
+        body: JSON.stringify(badge)
       });
     },
     read(badgeId) {
@@ -38,17 +39,17 @@ const api = {
     },
     update(badgeId, updates) {
       return callApi(`/badges/${badgeId}`, {
-        method: 'PUT',
-        body: JSON.stringify(updates),
+        method: "PUT",
+        body: JSON.stringify(updates)
       });
     },
     // Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
     remove(badgeId) {
       return callApi(`/badges/${badgeId}`, {
-        method: 'DELETE',
+        method: "DELETE"
       });
-    },
-  },
+    }
+  }
 };
 
 export default api;
